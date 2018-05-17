@@ -57,7 +57,7 @@ public class OODeskCalculator {
 
             try {
                 b = sc.nextFloat();
-            } catch (java.util.InputMismatchException e1) {
+            } catch (java.util.InputMismatchException e2) {
                 System.out.println("Ati introdus datele gresit!");
                 System.exit(0);
             }
