@@ -19,7 +19,7 @@ public class cnpReGex {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        String regex = "[1-2]{1}([0]{1}[0-9]{1}|[1]{1}[0-2]{1})([0-2]{1}[0-1]{1}|[3]{1}[0-9]{1})[0-9]{4}[0-9]{3}";
+        String regex = "[1-2]{1}([0]{1}[0-9]{1}|[1]{1}[0-2]{1})([0-2]{1}[0-9]{1}|[3]{1}[0-1]{1})[0-9]{4}[0-9]{3}";
         // create a pattern using introduced regular expresion
         try {
             Pattern pattern = Pattern.compile(regex);
