@@ -1,11 +1,11 @@
 /*
  * Class Button
  */
-package computer;
+package deskcalculator;
 
 /**
  * Class Button
- * @author gheor
+ * @author Mihai
  */
 public class Button {
 
