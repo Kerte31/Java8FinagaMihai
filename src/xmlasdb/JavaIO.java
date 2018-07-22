@@ -33,14 +33,14 @@ public class JavaIO {
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
             Document doc = dBuilder.parse(inputFile);
             doc.getDocumentElement().normalize();
-            System.out.println("Root element :" + doc.getDocumentElement().getNodeName());
+            System.out.println("Root element : " + doc.getDocumentElement().getNodeName());
             NodeList nList = doc.getElementsByTagName("user");
             System.out.println("----------------------------");
             int length = nList.getLength();
             System.out.println("XML number of elements = " + length);
             for (int temp = 0; temp < length; temp++) {
                 Node nNode = nList.item(temp);
-                System.out.println("\nCurrent Element :" + nNode.getNodeName());
+                System.out.println("\nCurrent Element : " + nNode.getNodeName());
                 if (nNode.getNodeType() == Node.ELEMENT_NODE) {
                     Element eElement = (Element) nNode;
                     System.out.println("User name : "
