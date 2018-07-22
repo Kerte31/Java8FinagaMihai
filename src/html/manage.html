@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+Manage users page of eBooksStore
+-->
+<html>
+    <head>
+        <title>eBooksStore_ManageUsersPage</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./css/eBooksStoreCSS.css">
+    </head>
+    <body>
+        <table class="tabel" width="100%" style="margin-top:80px;margin-bottom:80px;">
+            <tr> 
+                <td class="celula">Manage</td>
+                <td class="celula">Orders</td>
+                <td class="celula">Log out</td>
+                <td class="celulagoala"></td>
+            </tr>   
+        </table>
+        
+        <table border="1" width="100%">
+            <tr>
+                <th class="thc2" style="font-size: 15px"><b>select</b></th>
+                <th class="thc" style="font-size: 15px"><b>USERNAME</b></th>
+                <th class="thc" style="font-size: 15px"><b>PASSWORD</b></th>
+                <th class="thc" style="font-size: 15px"><b>ROLE</b><input class="tablewithborder" style="margin-left: 10px" type="submit" value="Admin"/></th>
+            </tr>    
+        </table>  
+        
+        <table border="1" width="100%">
+            <tr> 
+                <td class="tdc2"><input type="checkbox"></td>
+                <td class="tdc">admin</td>
+                <td class="tdc">admin</td> 
+                <td class="tdc">admin</td>
+            </tr>   
+            <tr> 
+                <td class="tdc2"><input type="checkbox"></td>
+                <td class="tdc">coco</td>
+                <td class="tdc">maria</td>
+                <td class="tdc">admin</td>
+            </tr> 
+        </table> 
+
+        <table class="tablecenterdwithborder">
+
+        </table>   
+
+        <table class="tablecenterdwithborder">
+            <tr> 
+                <td colspan="4"><input style="background:#fbffc4; margin-left: 50px" type="text" value="admin"/></td>
+            </tr> 
+            <tr> 
+                <td colspan="4"><input style="background:#fbffc4; margin-left: 50px" type="password" value="admin"/></td> 
+            </tr>  
+            <tr class="tablecenterdwithborder" >                 
+                <td colspan="4">
+                    <select name="users" multiple style="border-radius: 0.5em; margin-left: 50px">
+                        <option value="admin">admin</option>
+                    </select>
+                </td>   
+            </tr> 
+            <tr>   
+                <td><input class="tablewithborder" type="submit" value="Insert"/></td>
+                <td><input class="tablewithborder" type="submit" value="Update"/></td>
+                <td><input class="tablewithborder" type="submit" value="Delete"/></td>
+                <td><input class="tablewithborder" type="submit" value="Cancel"/></td>
+            </tr>
+        </table>
+    </body>
+</html>
