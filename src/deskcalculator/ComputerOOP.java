@@ -31,6 +31,7 @@ public class ComputerOOP {
         // read second operand on a line (enter confirms the number is ready)
         calculator.pushButtonsForOperand();
         // simulate pushing = and computes the result
+        calculator.displayMessageOnScreen("Result is:");
         calculator.pushButtonEqual();        
     }
     

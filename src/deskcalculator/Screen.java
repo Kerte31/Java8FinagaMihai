@@ -14,6 +14,7 @@ package deskcalculator;
 public class Screen {
     
         private int displayValue = 0;
+        private String displayMessage = "0";
 
     /**
      Method display specified parameter value
@@ -51,5 +52,9 @@ public class Screen {
     public void displayMessage(String message){
     
         System.out.println(message);
+    }
+    
+    public String getDisplayMessage() {
+        return displayMessage;
     }
 }

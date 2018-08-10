@@ -32,32 +32,35 @@ public class Frame {
     public void start(){
         ecran.display(0);
     }
-    /** Display message on scree
-     * @param message
-     * @param messagen*/
+    /** Display message on screen
+     * @param message*/
     public void displayMessageOnScreen(String message){
         ecran.displayMessage(message);
     }
     
     public void pushButtonsForOperand(){
         Scanner newScanner = new Scanner(System.in);
-        String readit = newScanner.nextLine();
-        Double operand = Double.valueOf(readit);
-        ecran.displayMessage("You introduced operand: ");
-        ecran.displayMessage(readit);
-        if(procesor.getFirstOperand() == null)
-            procesor.setFirstOperand(operand);
-        else
-            procesor.setSecondOperand(operand); 
+        while(newScanner.hasNextLine()){
+            String readit = newScanner.nextLine();
+            Double operand = Double.valueOf(readit);
+            ecran.displayMessage("You introduced operand: ");
+            ecran.displayMessage(readit);
+            if(procesor.getFirstOperand() == null)
+                procesor.setFirstOperand(operand);
+            else
+                procesor.setSecondOperand(operand); 
+            }
     }
 
     public void pushButtonsForOperator(){
         Scanner newScanner = new Scanner(System.in);
-        String readit = newScanner.nextLine();
-        Character operand = readit.charAt(0);
-        ecran.displayMessage("You introduced operand: ");
-        ecran.displayMessage(operand.toString());
-        procesor.setOperator(operand);
+        while(newScanner.hasNextLine()){
+            String readit = newScanner.nextLine();
+            Character operand = readit.charAt(0);
+            ecran.displayMessage("You introduced operand: ");
+            ecran.displayMessage(operand.toString());
+            procesor.setOperator(operand);
+        }
     }
     
     public void pushButtonEqual(){
