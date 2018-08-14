@@ -23,10 +23,13 @@
 <!ELEMENT users (user)*>
 
 <!--- Put your DTDDoc comment here. -->
-<!ELEMENT user (username|password)*>
+<!ELEMENT user (username|password|role)*>
 
 <!--- Put your DTDDoc comment here. -->
 <!ELEMENT username (#PCDATA)>
 
 <!--- Put your DTDDoc comment here. -->
 <!ELEMENT password (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT role (#PCDATA)>

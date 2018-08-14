@@ -43,7 +43,7 @@ public class JavaIO {
                 System.out.println("\nCurrent Element : " + nNode.getNodeName());
                 if (nNode.getNodeType() == Node.ELEMENT_NODE) {
                     Element eElement = (Element) nNode;
-                    System.out.println("User name : "
+                    System.out.println("Username : "
                             + eElement.getElementsByTagName("username")
                                     .item(0)
                                     .getTextContent());
@@ -52,10 +52,14 @@ public class JavaIO {
                                     .getElementsByTagName("password")
                                     .item(0)
                                     .getTextContent());
+                    System.out.println("Role : "
+                            + eElement
+                                    .getElementsByTagName("role")
+                                    .item(0)
+                                    .getTextContent());
                 }
             }
         } catch (ParserConfigurationException | SAXException | IOException | DOMException e) {
-            e.printStackTrace();
         }
     }
 

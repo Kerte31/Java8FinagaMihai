@@ -6,7 +6,18 @@ Users of eBooksStore
 
 <users>
     <user>
-        <username>admin</username>
-        <password>admin </password>
+        <username>Admin</username>
+        <password>admin</password>
+        <role>admin</role>
+    </user>
+    <user>
+        <username>Test</username>
+        <password>test</password>
+        <role>user</role>
+    </user>
+    <user>
+        <username>Mihai</username>
+        <password>mihai123</password>
+        <role>admin</role>
     </user>
 </users>
